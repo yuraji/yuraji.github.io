@@ -11,10 +11,22 @@ title: Markdown
 
 
 
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+
+
 #### syntax highlighting
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+
+
+
+{% highlight html %}
+<article class="post">
+	<div class="entry">
+	</div>
+	<div class="date">
+	</div>
+</article>
+{% endhighlight %}
