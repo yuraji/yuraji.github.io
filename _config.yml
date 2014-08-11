@@ -75,6 +75,20 @@ exclude:
 
 
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "page"
+    values:
+      layout: "page"
+
 
 
 
