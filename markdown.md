@@ -20,14 +20,6 @@ Content Cell  | Content Cell
 #### syntax highlighting
 
 
-Template:
-
-```html
-{{first collection}}
-```
-
-
-
 
 
 {% highlight html %}
