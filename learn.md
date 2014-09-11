@@ -3,52 +3,127 @@ title: Tools and Technologies worth learning (shortlist)
 ---
 
 
----
 
 ## Static Site Generators
 
----
-
 [Jekyll](http://jekyllrb.com/docs/home/)
-
----
 
 [Metalsmith](http://www.metalsmith.io/)
 pluggable site generator
 
 
----
-
 ## Preprocessors
 
----
+##### HTML
 
 [Jade](http://jade-lang.com/)
 
----
+[HAML](http://haml.info/)
+
+[Emmet](http://emmet.io/)
+
+##### CSS
+
+[LESS](http://lesscss.org/)
+
+[SASS](http://sass-lang.com/)
+
+[Stylus](http://learnboost.github.io/stylus/)
+
+
+##### Javascript
+
+[CoffeeScript](http://coffeescript.org/) ([coffeescriptcookbook](http://coffeescriptcookbook.com))
+
+
+## HTML Frameworks
+
+[Bootstrap](http://getbootstrap.com/)
+
+[Semantic-UI](http://semantic-ui.com)
+
+[Zurb Foundation](http://foundation.zurb.com)
+
+## Javascript Frameworks
+
+Backbone, Marionette
+
+Ember
+
+Angular
+
+
 
 ## Package Managers
 
----
+[DuoJS](http://duojs.org/) Package manager and build tool ([Huge list of available components](https://github.com/componentjs/component/wiki/Components))
 
-[DuoJS](http://duojs.org/) Package manager 
+[Bower](http://bower.io/) ([Registry](http://bower.io/search/))
 
----
+
+## Build Tools
+
+Grunt
+
+CodeKit
+
+
 
 ## Databases
 
----
-
 [Redis](http://redis.io/documentation)
 
----
 
 [Mongo](http://docs.mongodb.org/manual/)
 
 
----
+## Browsers
+
+[Chrome Console](https://developer.chrome.com/devtools/docs/console)
 
 
+## API
+
+
+
+## Tools
+
+[Vim](/vim)
+
+Sublime Text
+
+[RegExp](/regexp)
+
+
+## Node
+
+[Node](http://nodejs.org/) ([Docs](http://nodejs.org/documentation/))
+
+[Connect](https://github.com/senchalabs/connect)
+
+[Express](http://expressjs.com/)
+
+## Services
+
+[Google Analytics](http://www.google.com/analytics/)
+
+
+## Javascript Testing
+
+[Mocha](http://visionmedia.github.io/mocha/)
+
+[Chai](http://chaijs.com/)
+
+[Sinon](http://sinonjs.org/)
+
+[Jasmine](http://jasmine.github.io/)
+
+[Casper](http://casperjs.org/), [Phantom](http://phantomjs.org/), [Slimmer](http://slimerjs.org/)
+
+
+## Web Scraping
+
+[ineed](https://github.com/inikulin/ineed)
 
 
 
