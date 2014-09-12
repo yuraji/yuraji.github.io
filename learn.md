@@ -26,7 +26,7 @@ pluggable site generator
 
 [LESS](http://lesscss.org/)
 
-[SASS](http://sass-lang.com/)
+[SASS](http://sass-lang.com/) (.sass), [Compass](http://compass-style.org/) (.scss)
 
 [Stylus](http://learnboost.github.io/stylus/)
 
@@ -42,7 +42,7 @@ pluggable site generator
 
 [Semantic-UI](http://semantic-ui.com)
 
-[Zurb Foundation](http://foundation.zurb.com)
+[Zurb Foundation](http://foundation.zurb.com), [docs](http://foundation.zurb.com/docs/)
 
 ## Javascript Frameworks
 
@@ -55,6 +55,8 @@ Angular
 
 
 ## Package Managers
+
+[NPM](https://www.npmjs.org/doc/files/package.json.html)
 
 [DuoJS](http://duojs.org/) Package manager and build tool ([Huge list of available components](https://github.com/componentjs/component/wiki/Components))
 
@@ -97,7 +99,7 @@ Sublime Text
 
 ## Node
 
-[Node](http://nodejs.org/) ([Docs](http://nodejs.org/documentation/))
+[Node](http://nodejs.org/) ([Docs](http://nodejs.org/documentation/), [nodeschool](http://nodeschool.io) )
 
 [Connect](https://github.com/senchalabs/connect)
 
@@ -120,6 +122,17 @@ Sublime Text
 
 [Casper](http://casperjs.org/), [Phantom](http://phantomjs.org/), [Slimmer](http://slimerjs.org/)
 
+## Essential Javascript Libraries
+
+jQuery
+
+Modernizr
+
+Underscore, lo-dash, lazy
+
+
+
+---
 
 ## Web Scraping
 
