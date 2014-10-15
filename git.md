@@ -6,11 +6,11 @@ title: Git
 
 
 
-### # hook @hub -> update production files
+### hook @hub -> update production files
 
 When editing the project locally and pushing the commit to hub, you want the hub to automatically update the repository with production files.
 
-`~/git/projectname.git/hooks/post-update`
+~/git/projectname.git/hooks/**post-update**
 
 	#!/bin/sh
 	echo; echo "**** Pulling changes into Web [Hub's post-update hook]"; echo;
@@ -25,11 +25,11 @@ When editing the project locally and pushing the commit to hub, you want the hub
 ---------------------------------------------------------------------------
 
 
-### # hook @production files commit -> update hub
+### hook @production files commit -> update hub
 
 When editing the project on server, you want the commit to automatically be pushed to projects hub.
 
-`~/project/.git/hooks/post-commit`
+~/project/.git/hooks/**post-commit**
 
 
 	#!/bin/sh
