@@ -68,6 +68,8 @@ When editing the project on server, you want the commit to automatically be push
 
 [cheatsheet](http://cheat.errtheblog.com/s/git)
 
+[cheatsheet](http://scotch.io/bar-talk/git-cheat-sheet)
+
 [http://gitready.com/](http://gitready.com/)
 
 [http://gitguru.com/](http://gitguru.com/)
