@@ -25,8 +25,10 @@ Content Cell  | Content Cell
 {% highlight html %}
 <article class="post">
 	<div class="entry">
+		Content
 	</div>
 	<div class="date">
 	</div>
+	<!-- Comment -->
 </article>
 {% endhighlight %}
