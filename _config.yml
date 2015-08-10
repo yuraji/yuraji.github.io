@@ -51,7 +51,7 @@ baseurl: ""
 
 markdown: kramdown
 highlighter: pygments
-permalink: /:title
+permalink: pretty
 
 # The release of Jekyll Now that you're using
 version: v1.0.0
@@ -62,9 +62,9 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
-  - jemoji # Emoji please!
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+# gems:
+#   - jemoji # Emoji please!
+#   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
 exclude:
