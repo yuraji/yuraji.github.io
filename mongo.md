@@ -686,6 +686,121 @@ Given scores for each students for each class. What's the average class grade in
 
 
 
+## $match, $sort
+
+{% highlight js %}
+ db.zips.aggregate([ {$match: { state:"CA" }} ])
+
+ /* Match California, and then group results by city: */
+ db.zips.aggregate([ 
+ {$match: { state: "CA" }},
+ {$group: {
+    _id: "$city",
+    population: { $sum: "$pop" },
+    zip_codes: { $addToSet: "$_id" }
+ }} ])
+ /* Example result: */
+ { "_id" : "LAKE CITY", "population" : 234, "zip_codes" : [ "96115" ] }
+
+ /* Additionally reshape the document to show "city" key instead of "_id": */
+ {$project:{ _id:0, city:"$_id", population:1, zip_codes:1 } }
+
+ /* Additionally sort results to show most populated cities first: */
+ { $sort: { population: -1  }  }
+
+{% endhighlight %}
+
+
+
+## $skip and $limit
+
+
+{% highlight js %}
+ { $sort: { population: -1  } }, /* skip only makes sens after sorting */
+ {$skip:10},
+ {$limit:5}
+{% endhighlight %}
+
+
+## $first and $last
+
+
+
+{% highlight js %}
+ db.zips.aggregate([
+    /* get the population of every city in every state */
+    {$group:
+     {
+       _id: {state:"$state", city:"$city"},
+       population: {$sum:"$pop"},
+     }
+    },
+     /* sort by state, population */
+    {$sort: 
+       {"_id.state":1, "population":-1}
+    },
+
+    /* group by state, get the first item in each group */
+    {$group: 
+     {
+       _id:"$_id.state",
+       city: {$first: "$_id.city"},
+       population: {$first:"$population"}
+     }
+    },
+
+    /* now sort by state again */
+    {$sort:
+       {"_id":1}
+    }
+ ])
+{% endhighlight %}
+
+
+
+
+## $unwind
+
+Create as many copies of a document, as many values in a given array it contains.
+
+{% highlight js %}
+ /* given: */
+ { a:1, b:2, c:['apple', 'pear', 'orange']}
+ /* after unwind: */
+ { a:1, b:2, c:'apple' }
+ { a:1, b:2, c:'pear' }
+ { a:1, b:2, c:'orange' }
+{% endhighlight %}
+
+Find most popular tags:
+
+{% highlight js %}
+ db.posts.aggregate([
+   /* unwind by tags */
+   { "$unwind": "$tags" },
+   /* now group by tags, counting each tag */
+   { "$group": 
+     { "_id": "$tags",
+       "count": {$sum:1}
+     }
+   },
+   /* sort by popularity */
+   { "$sort": {"count":-1} },
+   /* show me the top 10 */
+   { "$limit": 10 },
+   /* change the name of _id to be tag */
+   { "$project":
+     { _id:0,
+       'tag':'$_id',
+       'count' : 1
+     }
+   }
+ ])
+{% endhighlight %}
+
+
+
+
 
 
 
